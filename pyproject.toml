@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="eqvit-torch"
+version="0.1.0"
+description="PyTorch EQViT for P-wave picking and rapid single-station magnitude estimation"
+requires-python=">=3.9"
+dependencies=["numpy","scipy","torch>=2.1","matplotlib","pandas","h5py","obspy","tqdm"]
+[project.optional-dependencies]
+notebook=["jupyter","ipykernel","scikit-learn"]
+[tool.setuptools.packages.find]
+where=["src"]
